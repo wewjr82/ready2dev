@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient Matching the Soft Warm Off-White / Ivory -->
+    <linearGradient id="ivory-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAF8F5" />
+      <stop offset="100%" stop-color="#F1EFEA" />
+    </linearGradient>
+
+    <!-- Sage / Eucalyptus Green Gradient (#7D9A81 to #5F7A63) -->
+    <linearGradient id="sage-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8DA791" />
+      <stop offset="50%" stop-color="#738F77" />
+      <stop offset="100%" stop-color="#566F5A" />
+    </linearGradient>
+
+    <!-- Warm Terracotta / Clay Gradient (#C8927C to #A66E58) -->
+    <linearGradient id="terracotta-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D49E88" />
+      <stop offset="100%" stop-color="#A8725C" />
+    </linearGradient>
+
+    <!-- Hot Stone Basalt Gradient (#434341 to #222220) -->
+    <linearGradient id="stone-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#525250" />
+      <stop offset="100%" stop-color="#2D2D2B" />
+    </linearGradient>
+
+    <!-- Soft Ambient Drop Shadow -->
+    <filter id="soft-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#4A584C" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="600" fill="url(#ivory-bg)" />
+
+  <!-- Subtle Outer Accent Border -->
+  <rect x="35" y="35" width="730" height="530" fill="none" stroke="#738F77" stroke-width="1" opacity="0.2" rx="4" />
+
+  <!-- CENTRAL EMBLEM / MONOGRAM LOGO -->
+  <g transform="translate(0, -15)" filter="url(#soft-shadow)">
+    <!-- Organic Outer Leaf / Monogram 'Q' Circle -->
+    <!-- The outer loop forms the body of the 'Q' with flowing botanical curves -->
+    <path d="M 400 110 
+             C 460 110, 505 155, 505 215 
+             C 505 275, 460 320, 400 320 
+             C 340 320, 295 275, 295 215 
+             C 295 155, 340 110, 400 110 Z" 
+          fill="none" 
+          stroke="url(#sage-grad)" 
+          stroke-width="3" />
+
+    <!-- Eucalyptus Leaf Overlay integrated into the 'Q' ring -->
+    <path d="M 330 170 C 370 140, 430 150, 460 190 C 430 210, 370 200, 330 170 Z" 
+          fill="url(#sage-grad)" 
+          opacity="0.18" />
+    <path d="M 330 170 C 385 175, 420 180, 460 190" 
+          fill="none" 
+          stroke="url(#sage-grad)" 
+          stroke-width="1.5" 
+          stroke-linecap="round" />
+
+    <!-- Hot Basalt Massage Stones (Relaxation & Balance motif inside the 'Q') -->
+    <!-- Large Base Stone -->
+    <ellipse cx="400" cy="245" rx="42" ry="18" fill="url(#stone-grad)" opacity="0.9" />
+    <!-- Medium Middle Stone -->
+    <ellipse cx="400" cy="222" rx="32" ry="14" fill="url(#stone-grad)" opacity="0.95" />
+    <!-- Small Top Stone -->
+    <ellipse cx="400" cy="203" rx="22" ry="10" fill="url(#stone-grad)" />
+
+    <!-- Orchid / Lotus Petal Accents on top of stones -->
+    <path d="M 400 185 C 392 165, 400 155, 400 155 C 400 155, 408 165, 400 185 Z" fill="url(#terracotta-grad)" />
+    <path d="M 395 187 C 382 172, 375 178, 375 178 C 375 178, 387 185, 395 187 Z" fill="url(#terracotta-grad)" opacity="0.8" />
+    <path d="M 405 187 C 418 172, 425 178, 425 178 C 425 178, 413 185, 405 187 Z" fill="url(#terracotta-grad)" opacity="0.8" />
+
+    <!-- The Tail of the 'Q' represented by a warm terracotta botanical swoop -->
+    <path d="M 445 280 C 470 305, 510 325, 530 310 C 510 335, 465 330, 435 295 Z" 
+          fill="url(#terracotta-grad)" />
+  </g>
+
+  <!-- TYPOGRAPHY -->
+  <!-- "Q MASSAGE SPA" Title -->
+  <text x="400" y="380" 
+        font-family="'Playfair Display', 'Didot', 'Cormorant Garamond', 'Georgia', serif" 
+        font-size="38" 
+        font-weight="500" 
+        letter-spacing="0.28em" 
+        fill="#2D2D2B" 
+        text-anchor="middle">
+    Q MASSAGE SPA
+  </text>
+
+  <!-- Elegant Line Divider with Center Dot -->
+  <g transform="translate(0, 5)">
+    <line x1="290" y1="410" x2="370" y2="410" stroke="#8DA791" stroke-width="1" opacity="0.6" />
+    <circle cx="400" cy="410" r="3" fill="#A8725C" />
+    <line x1="430" y1="410" x2="510" y2="410" stroke="#8DA791" stroke-width="1" opacity="0.6" />
+  </g>
+
+  <!-- "MASSAGE & WELLNESS" Subtitle -->
+  <text x="400" y="445" 
+        font-family="'Montserrat', 'Helvetica Neue', 'Lato', sans-serif" 
+        font-size="13" 
+        font-weight="400" 
+        letter-spacing="0.55em" 
+        fill="#566F5A" 
+        text-anchor="middle">
+    MASSAGE &amp; WELLNESS
+  </text>
+
+  <!-- Gentle Tagline -->
+  <text x="400" y="490" 
+        font-family="'Playfair Display', 'Cormorant Garamond', serif" 
+        font-size="12" 
+        font-style="italic" 
+        letter-spacing="0.15em" 
+        fill="#A8725C" 
+        text-anchor="middle">
+    rebalance • restore • renew
+  </text>
+</svg>

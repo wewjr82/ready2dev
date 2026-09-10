@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient (Soft Warm Light Sand / Cream) -->
+    <linearGradient id="sand-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBF9F2" />
+      <stop offset="100%" stop-color="#F2EDE0" />
+    </linearGradient>
+
+    <!-- Deep Forest Green Gradient (#1B5E3A to #0D3B23) -->
+    <linearGradient id="forest-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#216E45" />
+      <stop offset="50%" stop-color="#1B5E3A" />
+      <stop offset="100%" stop-color="#0E3821" />
+    </linearGradient>
+
+    <!-- Golden Yellow Accent Gradient (#E5B324 to #C49310) -->
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0C238" />
+      <stop offset="100%" stop-color="#C9940E" />
+    </linearGradient>
+
+    <!-- Fresh Leaf Accent Green (#388E52) -->
+    <linearGradient id="leaf-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4CAF50" />
+      <stop offset="100%" stop-color="#2E7D32" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow -->
+    <filter id="soft-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#0E3821" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="600" fill="url(#sand-bg)" />
+
+  <!-- Subtle Outer Accent Border -->
+  <rect x="35" y="35" width="730" height="530" fill="none" stroke="#1B5E3A" stroke-width="1" opacity="0.18" rx="4" />
+
+  <!-- CENTRAL EMBLEM / MONOGRAM LOGO -->
+  <g transform="translate(0, -10)" filter="url(#soft-shadow)">
+    <!-- Base Circular Emblem Frame (Rich Forest Green) -->
+    <circle cx="400" cy="215" r="105" fill="none" stroke="url(#forest-grad)" stroke-width="3" />
+    <circle cx="400" cy="215" r="97" fill="none" stroke="url(#gold-grad)" stroke-width="1" stroke-dasharray="5,5" opacity="0.8" />
+
+    <!-- Stylized Monogram 'T' & Blade of Grass / Hedge Shears Motif -->
+    
+    <!-- Left Blade of Grass / Shear Blade (Golden Trim) -->
+    <path d="M 360 280 
+             C 355 230, 365 170, 395 130 
+             C 385 165, 380 220, 380 280 Z" 
+          fill="url(#gold-grad)" />
+
+    <!-- Right Blade of Grass / Leaf Swoosh (Fresh Green) -->
+    <path d="M 440 280 
+             C 445 230, 435 170, 405 130 
+             C 415 165, 420 220, 420 280 Z" 
+          fill="url(#leaf-grad)" />
+
+    <!-- Crossbar of the 'T' - Sculpted Clean Lawn Bar (Forest Green) -->
+    <path d="M 335 165 
+             C 370 155, 430 155, 465 165 
+             C 455 178, 430 180, 400 180 
+             C 370 180, 345 178, 335 165 Z" 
+          fill="url(#forest-grad)" />
+
+    <!-- Central Vertical Trunk / Stem of 'T' -->
+    <path d="M 393 180 L 407 180 L 405 285 L 395 285 Z" 
+          fill="url(#forest-grad)" />
+
+    <!-- Lawn Stripes / Precision Cuts Symbol at Base -->
+    <path d="M 345 250 L 375 250 L 370 257 L 340 257 Z" fill="url(#forest-grad)" opacity="0.3" />
+    <path d="M 425 250 L 455 250 L 460 257 L 430 257 Z" fill="url(#forest-grad)" opacity="0.3" />
+  </g>
+
+  <!-- TYPOGRAPHY -->
+  <!-- "Trimly" Title -->
+  <text x="400" y="380" 
+        font-family="'Playfair Display', 'Georgia', 'Cinzel', serif" 
+        font-size="44" 
+        font-weight="700" 
+        letter-spacing="0.18em" 
+        fill="url(#forest-grad)" 
+        text-anchor="middle">
+    TRIMLY
+  </text>
+
+  <!-- Elegant Line Divider with Center Gold Circle -->
+  <g transform="translate(0, 5)">
+    <line x1="280" y1="410" x2="370" y2="410" stroke="#1B5E3A" stroke-width="1" opacity="0.4" />
+    <circle cx="400" cy="410" r="4" fill="url(#gold-grad)" />
+    <line x1="430" y1="410" x2="520" y2="410" stroke="#1B5E3A" stroke-width="1" opacity="0.4" />
+  </g>
+
+  <!-- "LAWN CARE & LANDSCAPING" Subtitle -->
+  <text x="400" y="445" 
+        font-family="'Montserrat', 'Helvetica Neue', 'Lato', sans-serif" 
+        font-size="13" 
+        font-weight="500" 
+        letter-spacing="0.5em" 
+        fill="#216E45" 
+        text-anchor="middle">
+    LAWN CARE &amp; LANDSCAPING
+  </text>
+
+  <!-- Tagline -->
+  <text x="400" y="490" 
+        font-family="'Playfair Display', 'Georgia', serif" 
+        font-size="12" 
+        font-style="italic" 
+        letter-spacing="0.15em" 
+        fill="#C9940E" 
+        text-anchor="middle">
+    beautiful lawns • clean landscapes • reliable service
+  </text>
+</svg>

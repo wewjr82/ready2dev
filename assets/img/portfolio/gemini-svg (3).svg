@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient (Clean Crisp Light Gray / White Background matching site body) -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F4F6F8" />
+    </linearGradient>
+
+    <!-- Vibrant Mint / Emerald Green Gradient (#2BB673 to #19804E) -->
+    <linearGradient id="mint-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34C780" />
+      <stop offset="50%" stop-color="#21A86B" />
+      <stop offset="100%" stop-color="#147A4B" />
+    </linearGradient>
+
+    <!-- Deep Slate / Charcoal Navy Accent (#1E293B) -->
+    <linearGradient id="slate-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Bright Electric Turquoise Accent (#00B4D8) -->
+    <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow for Depth -->
+    <filter id="soft-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.10" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="600" fill="url(#bg-grad)" />
+
+  <!-- Subtle Outer Accent Border -->
+  <rect x="35" y="35" width="730" height="530" fill="none" stroke="#21A86B" stroke-width="1" opacity="0.18" rx="6" />
+
+  <!-- CENTRAL EMBLEM / MONOGRAM LOGO -->
+  <g transform="translate(0, -10)" filter="url(#soft-shadow)">
+    <!-- Base Circular Emblem (Modern Metro Tech & Nature Fusion) -->
+    <circle cx="400" cy="215" r="105" fill="none" stroke="url(#mint-grad)" stroke-width="3" />
+    <circle cx="400" cy="215" r="96" fill="none" stroke="url(#cyan-grad)" stroke-width="1" stroke-dasharray="6,4" opacity="0.6" />
+
+    <!-- Stylized Monogram 'M' Integrated with Leaves & Gateway Arc -->
+    <!-- Left Leaf Stem forming 'M' leg 1 -->
+    <path d="M 335 270 C 335 200, 350 160, 370 140 C 375 170, 365 220, 360 270 Z" 
+          fill="url(#mint-grad)" />
+
+    <!-- Center Arch / Gateway 'M' Peak (Columbus Metro Landmark symbol) -->
+    <path d="M 365 175 C 385 140, 415 140, 435 175 L 420 270 L 400 210 L 380 270 Z" 
+          fill="url(#slate-grad)" />
+
+    <!-- Right Leaf Stem forming 'M' leg 2 -->
+    <path d="M 465 270 C 465 200, 450 160, 430 140 C 425 170, 435 220, 440 270 Z" 
+          fill="url(#mint-grad)" />
+
+    <!-- Sprouting Leaf Accent Overlay (Fresh Growth) -->
+    <path d="M 400 135 C 415 110, 445 115, 455 130 C 440 145, 415 145, 400 135 Z" 
+          fill="url(#cyan-grad)" opacity="0.9" />
+
+    <!-- Lawn Stripe Arc Base -->
+    <path d="M 330 255 C 370 275, 430 275, 470 255 C 450 280, 350 280, 330 255 Z" 
+          fill="url(#mint-grad)" />
+  </g>
+
+  <!-- TYPOGRAPHY -->
+  <!-- "MetroGreen" Header -->
+  <text x="400" y="380" 
+        font-family="'Montserrat', 'Helvetica Neue', 'Arial', sans-serif" 
+        font-size="44" 
+        font-weight="800" 
+        letter-spacing="0.05em" 
+        text-anchor="middle">
+    <tspan fill="url(#slate-grad)">METRO</tspan><tspan fill="url(#mint-grad)">GREEN</tspan>
+  </text>
+
+  <!-- Divider Line with Center Square Accent -->
+  <g transform="translate(0, 5)">
+    <line x1="260" y1="410" x2="370" y2="410" stroke="#21A86B" stroke-width="1.5" opacity="0.4" />
+    <rect x="396" y="406" width="8" height="8" fill="url(#cyan-grad)" rx="1" transform="rotate(45 400 410)" />
+    <line x1="430" y1="410" x2="540" y2="410" stroke="#21A86B" stroke-width="1.5" opacity="0.4" />
+  </g>
+
+  <!-- "LAWN & LANDSCAPING" Subtitle -->
+  <text x="400" y="445" 
+        font-family="'Montserrat', 'Helvetica Neue', sans-serif" 
+        font-size="14" 
+        font-weight="600" 
+        letter-spacing="0.45em" 
+        fill="url(#slate-grad)" 
+        opacity="0.85"
+        text-anchor="middle">
+    LAWN &amp; LANDSCAPING
+  </text>
+
+  <!-- Location Tagline -->
+  <text x="400" y="490" 
+        font-family="'Montserrat', 'Helvetica Neue', sans-serif" 
+        font-size="12" 
+        font-weight="500"
+        letter-spacing="0.18em" 
+        fill="#0284C7" 
+        text-anchor="middle">
+    COLUMBUS, OHIO • SINCE 2007
+  </text>
+</svg>

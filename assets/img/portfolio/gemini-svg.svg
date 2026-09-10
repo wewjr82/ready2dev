@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient Matching the Soft Warm Beige (#F4ECE1 to #EAE0D2) -->
+    <linearGradient id="cream-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7F1EA" />
+      <stop offset="100%" stop-color="#EBE2D5" />
+    </linearGradient>
+
+    <!-- Deep Burgundy / Wine Accent Gradient (#6B0F1A to #4A0810) -->
+    <linearGradient id="burgundy-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7A121E" />
+      <stop offset="50%" stop-color="#5B0B14" />
+      <stop offset="100%" stop-color="#3D050C" />
+    </linearGradient>
+
+    <!-- Warm Copper / Terracotta Accent (#A6533A to #823C27) -->
+    <linearGradient id="copper-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B85E44" />
+      <stop offset="100%" stop-color="#7F3723" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow for Icon Depth -->
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#4A0810" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="600" fill="url(#cream-bg)" />
+
+  <!-- Outer Fine Border -->
+  <rect x="35" y="35" width="730" height="530" fill="none" stroke="#7A121E" stroke-width="1" opacity="0.25" rx="2" />
+
+  <!-- CENTRAL EMBLEM / MONOGRAM -->
+  <g transform="translate(0, -10)" filter="url(#soft-shadow)">
+    <!-- Outer Circular Frame -->
+    <circle cx="400" cy="215" r="105" fill="none" stroke="url(#burgundy-grad)" stroke-width="1.5" />
+    <circle cx="400" cy="215" r="97" fill="none" stroke="#B85E44" stroke-width="0.75" stroke-dasharray="4,4" opacity="0.7" />
+
+    <!-- Stylized Shear / 'E' Motif -->
+    <!-- Blade/Hair Arc Left -->
+    <path d="M 365 140 C 330 175, 330 255, 370 290" 
+          fill="none" stroke="url(#burgundy-grad)" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Sharp Precision Shears Crossing -->
+    <path d="M 370 145 L 435 280 C 442 295, 430 305, 418 295 L 390 240 L 425 165 Z" 
+          fill="url(#copper-grad)" opacity="0.9" />
+
+    <!-- Sleek 'E' Sweeps -->
+    <path d="M 375 175 C 410 160, 440 170, 445 180" 
+          fill="none" stroke="url(#burgundy-grad)" stroke-width="4" stroke-linecap="round" />
+    
+    <path d="M 370 215 C 400 205, 420 210, 430 215" 
+          fill="none" stroke="url(#burgundy-grad)" stroke-width="3" stroke-linecap="round" />
+          
+    <path d="M 372 255 C 405 245, 435 255, 442 265" 
+          fill="none" stroke="url(#burgundy-grad)" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Center Pivot Dot -->
+    <circle cx="390" cy="240" r="3.5" fill="#F7F1EA" stroke="#7A121E" stroke-width="1.5" />
+  </g>
+
+  <!-- TYPOGRAPHY -->
+  <!-- "ELITE EDGE" Header -->
+  <text x="400" y="380" 
+        font-family="'Playfair Display', 'Didot', 'Cinzel', 'Georgia', serif" 
+        font-size="42" 
+        font-weight="600" 
+        letter-spacing="0.22em" 
+        fill="url(#burgundy-grad)" 
+        text-anchor="middle">
+    ELITE EDGE
+  </text>
+
+  <!-- Divider Line with Diamond -->
+  <g transform="translate(0, 5)">
+    <line x1="280" y1="410" x2="370" y2="410" stroke="#B85E44" stroke-width="1" opacity="0.6" />
+    <polygon points="400,407 404,410 400,413 396,410" fill="#7A121E" />
+    <line x1="430" y1="410" x2="520" y2="410" stroke="#B85E44" stroke-width="1" opacity="0.6" />
+  </g>
+
+  <!-- "SALON" Subtitle -->
+  <text x="400" y="445" 
+        font-family="'Montserrat', 'Helvetica Neue', 'Futura', sans-serif" 
+        font-size="14" 
+        font-weight="400" 
+        letter-spacing="0.65em" 
+        fill="#2B2625" 
+        opacity="0.85"
+        text-anchor="middle">
+    SALON
+  </text>
+
+  <!-- Tagline / Location Accent -->
+  <text x="400" y="490" 
+        font-family="'Playfair Display', 'Georgia', serif" 
+        font-size="12" 
+        font-style="italic"
+        letter-spacing="0.15em" 
+        fill="#B85E44" 
+        text-anchor="middle">
+    Hampton Roads • Virginia
+  </text>
+</svg>
