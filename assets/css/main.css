@@ -358,7 +358,7 @@ h6 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: #df1529;
   }
 
   .navmenu .active i,
@@ -702,7 +702,7 @@ section,
 
 .hero p span {
   letter-spacing: 1px;
-  border-bottom: 2px solid var(--accent-color);
+  border-bottom: 2px solid #F8121E;
 }
 
 .hero .social-links {
@@ -723,6 +723,16 @@ section,
 }
 
 @media (max-width: 768px) {
+/* .hero{
+  background-color: black;
+  text-align: center;
+}
+
+.hero img{
+  
+  display: none;
+} */
+
   .hero h2 {
     font-size: 32px;
   }
