@@ -12,13 +12,16 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Playfair Display",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font:
+    "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Playfair Display", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #898989; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #777777; /* Color for headings, subheadings and title throughout the website */
@@ -29,7 +32,12 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.6);  /* The default color of the main navmenu links */
+  --nav-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -226,7 +234,7 @@ h6 {
     padding-right: 0;
   }
 
-  .navmenu li:hover>a,
+  .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
@@ -265,11 +273,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
+  .navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover>ul {
+  .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -281,7 +289,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -384,7 +392,7 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -411,7 +419,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
@@ -471,7 +479,8 @@ h6 {
 
 .footer .copyright {
   padding-top: 25px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .credits {
@@ -497,7 +506,7 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #ffffff;
-  border-color: #F8121E transparent #F8121E transparent;
+  border-color: #d1232a transparent #d1232a transparent;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -524,7 +533,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: #F8121E;
+  background-color: #d1232a;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -569,7 +578,11 @@ h6 {
 
 .page-title:before {
   content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 50%
+  );
   position: absolute;
   inset: 0;
 }
@@ -591,11 +604,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -615,7 +628,6 @@ section,
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
     scroll-margin-top: 56px;
@@ -654,15 +666,14 @@ section,
   justify-content: center;
 }
 
-.hero h2{
+.hero h2 {
   color: #ffffff;
- /* font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif;
  font-weight: bolder; */
 }
 
-.hero p{
+.hero p {
   color: #ffffff;
-  
 }
 
 .hero img {
@@ -673,7 +684,6 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
- 
 }
 
 .hero:before {
@@ -702,7 +712,7 @@ section,
 
 .hero p span {
   letter-spacing: 1px;
-  border-bottom: 2px solid #F8121E;
+  border-bottom: 2px solid #d1232a;
 }
 
 .hero .social-links {
@@ -719,11 +729,11 @@ section,
 }
 
 .hero .social-links a:hover {
-  color: #F8121E;
+  color: #d1232a;
 }
 
 @media (max-width: 768px) {
-/* .hero{
+  /* .hero{
   background-color: black;
   text-align: center;
 }
@@ -742,11 +752,64 @@ section,
   }
 }
 
+.ready-to-die {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: max-content;
+  max-width: 95vw;
+  z-index: 4;
+  margin: 0;
+  padding: 0;
+
+  /* Lowered minimum font size to accommodate wide letter-spacing on mobile */
+  font-size: clamp(1.5rem, 6.5vw, 7rem);
+}
+
+.ready {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 0.5em;
+  margin-right: 0.1em;
+}
+
+.to {
+  font-family: "Times New Roman", Georgia, serif;
+  color: #ffffff;
+  letter-spacing: 0.5em;
+}
+
+.die {
+  font-family: "Times New Roman", Georgia, serif;
+  color: #d1232a;
+  letter-spacing: 0.5em;
+  margin-right: -0.5em; /* Exactly offsets the trailing 0.5em letter-spacing */
+}
+
+@media (max-width: 480px) {
+  .ready-to-die {
+    bottom: 15px;
+  }
+  .ready,
+  .to,
+  .die {
+    letter-spacing: 0.3em;
+  }
+  .die {
+    margin-right: -0.3em; /* Matched to -0.3em to keep true horizontal centering */
+  }
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 .about .profile-img {
-  border: 20px solid #F8121E;
+  border: 20px solid #d1232a;
   padding: 0;
 }
 
@@ -763,7 +826,7 @@ section,
   font-weight: 700;
 }
 
-.about h3{
+.about h3 {
   color: #777777;
 }
 
@@ -782,7 +845,7 @@ section,
 }
 
 .about .content ul i {
-  color: var(--accent-color);
+  color: #d1232a;
   margin-right: 0.5rem;
   line-height: 1.2;
   font-size: 1.25rem;
@@ -806,7 +869,7 @@ section,
 }
 
 .services .service-item .icon i {
-  color: #F8121E;
+  color: #d1232a;
   font-size: 40px;
   line-height: 0;
   transition: 0.3s;
@@ -849,13 +912,12 @@ section,
   color: #898989;
 }
 
-
-.how-it-works{
-  background-color:black;
-  color: #F8121E;
+.how-it-works {
+  background-color: black;
+  color: #d1232a;
 }
 
-.how-it-works p{
+.how-it-works p {
   color: #898989;
 }
 
@@ -863,22 +925,17 @@ section,
   color: white;
 } */
 
-.services .service-item .red-title{
-  color: #F8121E;
+.services .service-item .red-title {
+  color: #d1232a;
 }
 
-.services .service-item .red-description{
+.services .service-item .red-description {
   color: #898989;
 }
 
-.red-title2{
+.red-title2 {
   color: black;
 }
-
-
-
-
-
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -1043,7 +1100,7 @@ section,
   font-weight: 400;
   color: #ffffff;
   display: inline-block;
-  background-color: #F8121E;
+  background-color: #d1232a;
 }
 
 .portfolio .portfolio-content .portfolio-info p {
@@ -1230,7 +1287,8 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact h2, h3{
+.contact h2,
+h3 {
   color: black;
 }
 
@@ -1243,7 +1301,7 @@ section,
 
 .contact .info-item i {
   font-size: 20px;
-  color: #F8121E;
+  color: #d1232a;
   width: 56px;
   height: 56px;
   display: flex;
@@ -1251,7 +1309,7 @@ section,
   align-items: center;
   transition: all 0.3s ease-in-out;
   border-radius: 50%;
-  border: 1px solid #F8121E;
+  border: 1px solid #d1232a;
   margin-right: 15px;
   background-color: black;
 }
@@ -1285,31 +1343,35 @@ section,
   }
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 50%
+  );
   border-color: black;
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
   border-color: black;
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   color: var(--contrast-color);
   background: black;
   border: 0;
@@ -1318,19 +1380,21 @@ section,
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, #898989, transparent 20%);
 }
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
-#portfolio, h2{
+#portfolio,
+h2 {
   color: black;
 }
 
-#portfolio, p{
-  color:#898989 ;
+#portfolio,
+p {
+  color: #898989;
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -1342,14 +1406,20 @@ section,
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
@@ -1364,7 +1434,8 @@ section,
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .portfolio-details .portfolio-info ul {
@@ -1373,7 +1444,7 @@ section,
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1401,14 +1472,15 @@ section,
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
-.service-details .service-box+.service-box {
+.service-details .service-box + .service-box {
   margin-top: 30px;
 }
 
 .service-details .service-box h4 {
   font-size: 20px;
   font-weight: 700;
-  border-bottom: 2px solid color-mix(in srgb, var(--default-color), transparent 92%);
+  border-bottom: 2px solid
+    color-mix(in srgb, var(--default-color), transparent 92%);
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
@@ -1457,7 +1529,8 @@ section,
   align-items: center;
   padding: 10px 0;
   transition: 0.3s;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .service-details .download-catalog a:first-child {
@@ -1532,6 +1605,3 @@ section,
 .starter-section {
   /* Add your styles here */
 }
-
-
-
