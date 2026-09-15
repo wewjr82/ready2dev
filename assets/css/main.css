@@ -668,35 +668,37 @@ section,
 
 .hero h2 {
   display: inline-flex;
-  align-items: center;            /* Centers the black box vertically against "william" */
+  align-items: center;
   justify-content: center;
   font-size: clamp(2rem, 6vw, 5rem);
   line-height: 1;
   margin: 0;
   padding: 0;
+  white-space: nowrap;
 }
 
+/* "william" scaled down to ~70% to match "the notorious" */
 .hero h2 .william {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 900;
+  font-size: 0.7em;                 /* Reduces size relative to the black box */
   color: #ffff;
   text-transform: lowercase;
   letter-spacing: -0.02em;
-  margin-right: 0.2em;
+  margin-right: 0.25em;
 }
 
+/* "WHITE" remains at full scale (1em) */
 .hero h2 .white {
   font-family: "Times New Roman", Georgia, serif;
   font-weight: 700;
-  color: #d1232a;
+  font-size: 1em;
+  color: #c81d25;
   background-color: #000000;
-  
-  /* Precision padding to match the taller box on the original cover */
-  padding: 0.15em 0.3em 0.18em 0.3em; 
+  padding: 0.15em 0.3em 0.18em 0.3em;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   display: inline-block;
-  transform: translateY(1px);
 }
 
 .hero p {
